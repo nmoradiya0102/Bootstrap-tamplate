@@ -50,7 +50,6 @@ const Navbar = () => {
       <li class="nav-item active">
         <Link to={'/about'} class="nav-link">About</Link>
       </li>
-      
     </ul>
   </div>
 </nav>

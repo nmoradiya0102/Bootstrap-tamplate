@@ -5,10 +5,11 @@ import adminNavbar from './components/Admin/Header/adminNavbar';
 import List from './components/Admin/Pages/List';
 import userNav from './components/User/Header/userNav';
 import Product from './components/User/Pages/Product';
-import Home from './components/Admin/Pages/Home';
+import Home from './components/User/Pages/Home';
 import Login from './components/Atoms/Body/Login';
 import About  from "./components/User/Pages/About";
-import { useEffect , useState } from 'react';
+// import { useEffect , useState } from 'react';
+import Home_Page from './components/Admin/Pages/Home_Page';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
       <>
         <Navbar data = {adminNavbar}/>
         <Routes>
-          <Route path='/' element = {<home />} />
+          <Route path='/' element = {<Home_Page />} />
           <Route path='/list' element = {<List />} />
         </Routes>
       </>
@@ -33,7 +34,6 @@ function App() {
         <Route path='/' element = {<Home />} />
         <Route path='/product' element = {<Product />} />
         <Route path='/About' element = {<About />} />
-
         </Routes>
       </>
     );

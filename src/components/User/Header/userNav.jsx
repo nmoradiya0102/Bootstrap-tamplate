@@ -7,6 +7,10 @@
     name: "Product",
     path: "/product",
   },
+  {
+    name : "about",
+    path : "/about",
+  }
 ];
 
 export default userNav
