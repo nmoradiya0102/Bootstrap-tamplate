@@ -13,7 +13,7 @@ import Home_Page from './components/Admin/Pages/Home_Page';
 
 function App() {
 
-  const role = 'user';
+  const role = 'admin';
 
   if(role === 'admin'){
     return(
