@@ -1,6 +1,6 @@
 import { Route , Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Atoms/Header/Navbar';
+import Navbar, { Admin_Navbar } from './components/Atoms/Header/Navbar';
 import adminNavbar from './components/Admin/Header/adminNavbar';
 import List from './components/Admin/Pages/List';
 import userNav from './components/User/Header/userNav';
@@ -18,10 +18,11 @@ function App() {
   if(role === 'admin'){
     return(
       <>
-        <Navbar data = {adminNavbar}/>
+        <Admin_Navbar data = {adminNavbar}/>
         <Routes>
           <Route path='/' element = {<Home_Page />} />
-          <Route path='/list' element = {<List />} />
+          <Route path='/List' element = {<List />} />
+          {/* <Route path='/list' element = {<List />} /> */}
         </Routes>
       </>
     );

@@ -6,7 +6,7 @@ const adminNav = [
     },
     {
       name: "List",
-      path: "/list",
+      path: "/List",
     },
   ];
 
